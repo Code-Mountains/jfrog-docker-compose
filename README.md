@@ -134,3 +134,17 @@ uid                      codemountains <thecodemountains@gmail.com>
 sub   rsa3072 2023-11-24 [E] [expires: 2025-11-23]
 
 ```
+
+
+# Using Key ID with pass
+```
+pass init D2557B0D
+
+## OUTPUT:
+
+$ pass init D2557B0D
+
+mkdir: created directory '/home/sysadmin/.password-store/'
+Password store initialized for D2557B0D
+
+```
