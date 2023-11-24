@@ -705,3 +705,229 @@ Attempting to seed PostgreSQL. This may take some time.
 Creating network "trial-prox-postgres_default" with the default driver
 Pulling postgres (releases-docker.jfrog.io/postgres:13.10-alpine)...
 13.10-alpine: Pulling from postgres
+Digest: sha256:1e85eddf0ae095fa707bd1e46f26129b43be2c2d0633684e038745ff9c5b7c6a
+Status: Downloaded newer image for releases-docker.jfrog.io/postgres:13.10-alpine
+Creating postgresql ... 
+Creating postgresql ... done
+
+[DEBUG] Successfully copied PostgreSQL setup script
+psql (PostgreSQL) 13.10
+
+Waiting for Postgres to get ready using the commands: "psql --host=localhost --port=5432 --version" & "psql --host=localhost --port=5432 -l"
+.
+
+Postgres is ready. Executing commands
+
+Postgres setup is now complete
+
+Successfully seeded PostgreSQL
+
+[DEBUG] Copying [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/templates/docker-compose.yaml] as [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/docker-compose.yaml]
+
+[DEBUG] Copying [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/templates/docker-compose-rabbitmq.yaml] as [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/docker-compose-rabbitmq.yaml]
+
+[DEBUG] Method docker_getSystemValue Caller:34 ./config.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.mongo]
+
+[DEBUG] Mongo entry does not exist. Removing mongo container
+
+[DEBUG] Method docker_removeSystemValue Caller:213 ./config.sh
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc/security]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc/security
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc/security]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/security/join.key]
+
+[DEBUG] Method docker_hook_setupThirdParty
+
+[DEBUG] Method docker_addToEnvFile Caller:146 ./config.sh
+
+[DEBUG] Replacing [HOST_ID] in /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/.env
+
+[DEBUG] Replaced [HOST_ID=.*] with [HOST_ID=vault.thecodemountains.com] in [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/.env]
+
+[DEBUG] Method createErlangCookie
+
+[DEBUG] Creating erlang cookie [/root/.jfrog/xray/var/data/rabbitmq/.erlang.cookie] as [JFXR_RABBITMQ_COOKIE]
+
+[DEBUG] Method setupRabbitMQCluster
+
+[DEBUG] Method _getYamlValueAndUpdateEnv sourceKey:[shared.rabbitMq.active.node.name], targetEnv:[JF_SHARED_RABBITMQ_ACTIVE_NODE_NAME]
+
+[DEBUG] Method docker_getSystemValue Caller:4557 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_getSystemValue. key:[shared.rabbitMq.active.node.name]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 999:999 /root/.jfrog/xray/app/third-party/rabbitmq]
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_configureLogRotation Caller:5542 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _addLogRotateBinary Caller:5270 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method configureLogRotation Caller:5271 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Configuring log rotation as user [1030], group [1030], effective cron User [root]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/log/archived]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/log/archived
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/log/archived]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/artifactory/var/etc/logrotate]
+
+[DEBUG] Attempting to create /root/.jfrog/artifactory/var/etc/logrotate
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1030:1030 /root/.jfrog/artifactory/var/etc/logrotate]
+
+[DEBUG] Method createFile [/root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addLogRotateConfiguration Caller:1232 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Adding logrotate configuration for [/root/.jfrog/artifactory/var/log/console.log] to [/root/.jfrog/artifactory/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addCronJobForLogrotate Caller:1233 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method removeLogRotation Caller:1155 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method docker_configureLogRotation Caller:5544 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method _addLogRotateBinary Caller:5270 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method configureLogRotation Caller:5271 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Configuring log rotation as user [1035], group [1035], effective cron User [root]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray]
+
+[DEBUG] Attempting to create /root/.jfrog/xray
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray/var]
+
+[DEBUG] Attempting to create /root/.jfrog/xray/var
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray/var]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray/var/log]
+
+[DEBUG] Attempting to create /root/.jfrog/xray/var/log
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray/var/log]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray/var/log/archived]
+
+[DEBUG] Attempting to create /root/.jfrog/xray/var/log/archived
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray/var/log/archived]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray/var/etc]
+
+[DEBUG] Attempting to create /root/.jfrog/xray/var/etc
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray/var/etc]
+
+[DEBUG] Method createDir invoked with [/root/.jfrog/xray/var/etc/logrotate]
+
+[DEBUG] Attempting to create /root/.jfrog/xray/var/etc/logrotate
+
+[DEBUG] Method io_setOwnershipNonRecursive. Executing [chown 1035:1035 /root/.jfrog/xray/var/etc/logrotate]
+
+[DEBUG] Method createFile [/root/.jfrog/xray/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1035:1035 /root/.jfrog/xray/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addLogRotateConfiguration Caller:1232 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Adding logrotate configuration for [/root/.jfrog/xray/var/log/console.log] to [/root/.jfrog/xray/var/etc/logrotate/logrotate.conf]
+
+[DEBUG] Method _addCronJobForLogrotate Caller:1233 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method removeLogRotation Caller:1155 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] No third party integration configured. Skipping invocation of 3rd party hook
+
+[DEBUG] Method docker_showSuccessMessage Caller:5554 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[1mDocker setup complete[0m
+
+Installation directory: [/root/.jfrog] contains data and configurations.
+
+Use docker-compose commands to start the application. Once the application has started, it can be accessed at [http://127.0.0.1:8082]
+
+[1mExamples:[0m
+cd /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose
+
+
+Rabbitmq is a dependent service which needs to be started once after install. This needs to be running before start of xray services.
+
+start rabbitmq:      docker-compose -p trial-prox-rabbitmq -f docker-compose-rabbitmq.yaml up -d
+start postgresql:    docker-compose -p trial-prox-postgres -f docker-compose-postgres.yaml up -d
+start:               docker-compose -p trial-prox up -d
+stop:                docker-compose -p trial-prox down
+
+[1mNOTE:[0m The compose file uses several environment variables from the .env file. Remember to run from within the [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose] folder
+
+[DEBUG] Method docker_cleanup Caller:5559 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_removeInstallerYaml Caller:5070 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Removing file: [/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/installer.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/log/config.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/system.basic-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1030:1030 /root/.jfrog/artifactory/var/etc/system.full-template.yaml]
+
+[DEBUG] Method docker_cleanup Caller:5560 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method wrapper_removeInstallerYaml Caller:5070 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1035:1035 /root/.jfrog/xray/var/log/config.log]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1035:1035 /root/.jfrog/xray/var/etc/system.basic-template.yaml]
+
+[DEBUG] Method io_setOwnership. Executing [chown -R 1035:1035 /root/.jfrog/xray/var/etc/system.full-template.yaml]
+
+[1mDone[0m
+

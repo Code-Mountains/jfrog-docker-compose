@@ -5,7 +5,7 @@ services:
     container_name: postgresql
     environment:
       - POSTGRES_HOME="/postgres"
-      - POSTGRES_PASSWORD=password
+      - POSTGRES_PASSWORD=__REPLACE_POSTGRES_PASSWORD__
     ports:
       - 5432:5432
     volumes:
