@@ -165,7 +165,7 @@ services:
         max-size: "50m"
         max-file: "10"
   postgres:
-    image: ${DOCKER_REGISTRY}/postgres:13.10-alpine
+    image: ${DOCKER_REGISTRY}/jfrog/xray-rabbitmq:3.11.9-management
     container_name: postgresql
     environment:
       - POSTGRES_HOME="/postgres"

@@ -1,0 +1,13 @@
+installer:
+  ha: n
+  node:
+    ip: 127.0.0.1
+  install_postgresql: y
+  data_dir: /root/.jfrog
+  postgresql_version: 13-10v
+shared:
+  database:
+    type: postgresql
+    driver: org.postgresql.Driver
+  rabbitMq:
+    password: JFXR_RABBITMQ_COOKIE
