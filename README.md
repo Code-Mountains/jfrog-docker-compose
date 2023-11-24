@@ -67,3 +67,31 @@ NOTE: The compose file uses several environment variables from the .env file. Re
 
 Done
 ```
+
+# Docker Compose PostGres and RabbitMQ
+```
+
+$ docker-compose -p trial-prox-rabbitmq -f docker-compose-rabbitmq.yaml up -d
+Creating network "trial-prox-rabbitmq_default" with the default driver
+Pulling rabbitmq (releases-docker.jfrog.io/jfrog/xray-rabbitmq:3.11.9-management)...
+3.11.9-management: Pulling from jfrog/xray-rabbitmq
+7608715873ec: Pull complete
+8147f1b064ec: Pull complete
+b49348aba7cf: Pull complete
+96fb4c28b2c1: Pull complete
+626e07084b41: Pull complete
+f63218e95551: Pull complete
+ec66df5c883f: Pull complete
+ed46dea04296: Pull complete
+3f0e404c1d68: Pull complete
+57315aaee690: Pull complete
+b0805ae0878b: Pull complete
+Digest: sha256:0b47a9574f62bf978a2d734753e98584da8f117db1452d16b7acd64e92bccc68
+Status: Downloaded newer image for releases-docker.jfrog.io/jfrog/xray-rabbitmq:3.11.9-management
+Creating xray_rabbitmq ... done
+
+
+$ docker-compose -p trial-prox-postgres -f docker-compose-postgres.yaml up -d
+Recreating postgresql ... done
+
+```
