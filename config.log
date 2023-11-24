@@ -1,0 +1,46 @@
+
+[1mBeginning JFrog Platform Trial Pro X setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:5459 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 24.0.2, build cb74dfc
+/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh: line 2827: docker-compose: command not found
+
+[38;5;197m[ERROR[0m[38;5;197m] [0mUnable to run docker-compose
+
+[1mBeginning JFrog Platform Trial Pro X setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:5459 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 24.0.2, build cb74dfc
+/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh: line 2827: docker-compose: command not found
+
+[38;5;197m[ERROR[0m[38;5;197m] [0mUnable to run docker-compose
+
+[1mBeginning JFrog Platform Trial Pro X setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:5459 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 24.0.2, build cb74dfc
+/home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh: line 2827: docker-compose: command not found
+
+[38;5;197m[ERROR[0m[38;5;197m] [0mUnable to run docker-compose
+
+[1mBeginning JFrog Platform Trial Pro X setup[0m
+
+
+[DEBUG] Method docker_doValidations Caller:5459 /home/sysadmin/Documents/code/artifactory/jfrog-docker-compose/bin/dockerComposeHelper.sh
+
+Validating System requirements
+Docker version 24.0.7, build afdd53b
+docker-compose version 1.29.2, build unknown
+
+[DEBUG] All validations successful
+
+Downloading JFrog xray and its dependencies (this may take several minutes)...
