@@ -148,3 +148,84 @@ mkdir: created directory '/home/sysadmin/.password-store/'
 Password store initialized for D2557B0D
 
 ```
+
+# Docker Info
+```
+$ docker info
+Client: Docker Engine - Community
+ Version:    24.0.7
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.11.2-desktop.5
+    Path:     /usr/lib/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.23.0-desktop.1
+    Path:     /usr/lib/docker/cli-plugins/docker-compose
+  dev: Docker Dev Environments (Docker Inc.)
+    Version:  v0.1.0
+    Path:     /usr/lib/docker/cli-plugins/docker-dev
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.20
+    Path:     /usr/lib/docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v0.1.0-beta.9
+    Path:     /usr/lib/docker/cli-plugins/docker-init
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     /usr/lib/docker/cli-plugins/docker-sbom
+  scan: Docker Scan (Docker Inc.)
+    Version:  v0.26.0
+    Path:     /usr/lib/docker/cli-plugins/docker-scan
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.0.9
+    Path:     /usr/lib/docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 0
+ Server Version: 24.0.6
+ Storage Driver: vfs
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 8165feabfdfe38c65b599c4993d227328c231fca
+ runc version: v1.1.8-0-g82f18fe
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: unconfined
+  cgroupns
+ Kernel Version: 6.4.16-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 6
+ Total Memory: 3.723GiB
+ Name: linuxkit-525400123456
+ ID: f3c7b1e2-6ac1-478d-8c8d-b99246555154
+ Docker Root Dir: /mnt/samsung/docker-data
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+WARNING: daemon is not using the default seccomp profile
+```
