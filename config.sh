@@ -294,7 +294,7 @@ else
   SERVER_URL="http://$(wrapper_getHostIP):${JF_ROUTER_ENTRYPOINTS_EXTERNALPORT}"
 fi
 if [[ "${DOCKER_DESKTOP_SETUP}" == "$FLAG_Y" && "$(uname)" == "Darwin" ]]; then
-      sourcePath="/root/.jfrog"
+      sourcePath="/mnt/samsung/root.jfrog/.jfrog"
       expectedPath="${COMPOSE_HOME}"
       replacePath "${COMPOSE_HOME}/.env" "${sourcePath}" "${expectedPath}"
       source "${COMPOSE_HOME}/.env"
