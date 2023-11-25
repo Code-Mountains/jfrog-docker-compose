@@ -12,9 +12,9 @@ services:
       - 4369:4369
       - 127.0.0.1:25672:25672
     volumes:
-      - third-party/rabbitmq/setRabbitCluster.sh:/setRabbitCluster.sh
-      - third-party/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
-      - /mnt/samsung/root.jfrog/xray/var/data/rabbitmq:/var/lib/rabbitmq
+      - /mnt/samsung/code/artifactory/jfrog-docker-compose/third-party/rabbitmq/setRabbitCluster.sh:/setRabbitCluster.sh
+      - /mnt/samsung/code/artifactory/jfrog-docker-compose/third-party/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+      - /mnt/samsung/code/artifactory/jfrog-docker-compose/root/.jfrog/.jfrog/xray/var/data/rabbitmq:/var/lib/rabbitmq
       - /etc/localtime:/etc/localtime:ro
     restart: always
     extra_hosts:
