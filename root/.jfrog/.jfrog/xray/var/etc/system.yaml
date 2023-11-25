@@ -1,0 +1,20 @@
+shared:
+  node:
+    id: vault-xray
+    name: vault-xray
+    ip: 127.0.0.1
+  security:
+    joinKey: EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+  rabbitMq:
+    password: JFXR_RABBITMQ_COOKIE
+    url: amqp://127.0.0.1:5672/
+  jfrogUrl: http://127.0.0.1:8082
+  database:
+    url: postgres://127.0.0.1:5432/xraydb?sslmode=disable
+    username: xray
+    password: password
+    type: postgresql
+    driver: org.postgresql.Driver
+router:
+  entrypoints:
+    externalPort: 8083
